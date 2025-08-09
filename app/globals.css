@@ -1,0 +1,137 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+/* Force dark theme for the entire app */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: linear-gradient(135deg, #003366 0%, #111827 100%);
+  min-height: 100%;
+}
+
+body {
+  background: transparent;
+  color: white;
+}
+
+:root { /* clean light gray fintech palette */ --radius: 0.625rem; --card: oklch(1 0 0); --card-foreground: oklch(0.145 0 0); --popover: oklch(1 0 0); --popover-foreground: oklch(0.145 0 0); --primary: oklch(0.205 0 0); --primary-foreground: oklch(0.985 0 0); --secondary: oklch(0.97 0 0); --secondary-foreground: oklch(0.205 0 0); --muted: oklch(0.97 0 0); --muted-foreground: oklch(0.556 0 0); --accent: oklch(0.97 0 0); --accent-foreground: oklch(0.205 0 0); --destructive: oklch(0.577 0.245 27.325); --border: oklch(0.922 0 0); --input: oklch(0.922 0 0); --ring: oklch(0.708 0 0); --chart-1: oklch(0.646 0.222 41.116); --chart-2: oklch(0.6 0.118 184.704); --chart-3: oklch(0.398 0.07 227.392); --chart-4: oklch(0.828 0.189 84.429); --chart-5: oklch(0.769 0.188 70.08); --sidebar: oklch(0.985 0 0); --sidebar-foreground: oklch(0.145 0 0); --sidebar-primary: oklch(0.205 0 0); --sidebar-primary-foreground: oklch(0.985 0 0); --sidebar-accent: oklch(0.97 0 0); --sidebar-accent-foreground: oklch(0.205 0 0); --sidebar-border: oklch(0.922 0 0); --sidebar-ring: oklch(0.708 0 0); --background: #E5E7EB; --foreground: #0b1220;
+}
+
+/* Tailwind v4 @theme is omitted to appease generic CSS parsers here. */
+
+/* dark mode handled via .dark class in tokens below */
+
+/* Typography System */
+html, body { 
+  font-family: var(--font-inter), ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+  font-family: var(--font-space-grotesk), var(--font-inter), ui-sans-serif, system-ui;
+  font-weight: 700;
+}
+
+/* minimalist shadows and rounded */
+.shadow-soft { box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
+.shadow-subtle { box-shadow: 0 6px 18px rgba(0,0,0,0.06); }
+.rounded-xl { border-radius: 16px; }
+.rounded-2xl { border-radius: 20px; }
+.rounded-3xl { border-radius: 28px; }
+
+/* gradient helpers */
+.grad-deep { background: linear-gradient(135deg, #003366 0%, #0a4a8a 60%, #14B8A6 100%);} /* deep tech */
+.grad-sun { background: linear-gradient(135deg, #FFCC00 0%, #ffd54a 60%, #fff1a8 100%);} /* cta glow */
+.grad-mist { background: linear-gradient(180deg, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0.2) 100%);} /* soft overlay */
+
+/* faint geometric V pattern */
+.bg-v-pattern {
+  background-image:
+    linear-gradient(135deg, rgba(0,0,0,0.03) 25%, transparent 25%),
+    linear-gradient(225deg, rgba(0,0,0,0.03) 25%, transparent 25%),
+    linear-gradient(45deg, rgba(0,0,0,0.03) 25%, transparent 25%),
+    linear-gradient(315deg, rgba(0,0,0,0.03) 25%, rgba(0,0,0,0.03) 25%);
+  background-position: 10px 0, 10px 0, 0 0, 0 0;
+  background-size: 20px 20px;
+  background-repeat: repeat;
+}
+
+/* accessibility tweaks */
+.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
+
+/* floating animation for cards - smoother version */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* enhanced backdrop blur support */
+@supports (backdrop-filter: blur(20px)) {
+  .backdrop-blur-enhanced {
+    backdrop-filter: blur(20px) saturate(180%);
+  }
+}
+
+/* subtle gradient text animation */
+@keyframes gradient-x {
+  0%, 100% {
+    background-size: 200% 200%;
+    background-position: left center;
+  }
+  50% {
+    background-size: 200% 200%;
+    background-position: right center;
+  }
+}
+
+.animate-gradient-x {
+  background-size: 200% 200%;
+  animation: gradient-x 6s ease infinite;
+}
+
+/* very subtle pulse for CTAs */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(255, 204, 0, 0.4);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+/* subtle background movement */
+@keyframes bg-shift {
+  0%, 100% { transform: translateX(0px) translateY(0px); }
+  25% { transform: translateX(-2px) translateY(-1px); }
+  50% { transform: translateX(0px) translateY(-2px); }
+  75% { transform: translateX(2px) translateY(-1px); }
+}
+
+.animate-bg-shift {
+  animation: bg-shift 8s ease-in-out infinite;
+}
+
+/* theme variables are already defined via shadcn tokens above */
+
+.dark { --background: oklch(0.145 0 0); --foreground: oklch(0.985 0 0); --card: oklch(0.205 0 0); --card-foreground: oklch(0.985 0 0); --popover: oklch(0.205 0 0); --popover-foreground: oklch(0.985 0 0); --primary: oklch(0.922 0 0); --primary-foreground: oklch(0.205 0 0); --secondary: oklch(0.269 0 0); --secondary-foreground: oklch(0.985 0 0); --muted: oklch(0.269 0 0); --muted-foreground: oklch(0.708 0 0); --accent: oklch(0.269 0 0); --accent-foreground: oklch(0.985 0 0); --destructive: oklch(0.704 0.191 22.216); --border: oklch(1 0 0 / 10%); --input: oklch(1 0 0 / 15%); --ring: oklch(0.556 0 0); --chart-1: oklch(0.488 0.243 264.376); --chart-2: oklch(0.696 0.17 162.48); --chart-3: oklch(0.769 0.188 70.08); --chart-4: oklch(0.627 0.265 303.9); --chart-5: oklch(0.645 0.246 16.439); --sidebar: oklch(0.205 0 0); --sidebar-foreground: oklch(0.985 0 0); --sidebar-primary: oklch(0.488 0.243 264.376); --sidebar-primary-foreground: oklch(0.985 0 0); --sidebar-accent: oklch(0.269 0 0); --sidebar-accent-foreground: oklch(0.985 0 0); --sidebar-border: oklch(1 0 0 / 10%); --sidebar-ring: oklch(0.556 0 0);
+}
+
+/* Tailwind @layer directives are managed via PostCSS plugin; keeping plain CSS for editor/lint compatibility */
+
+/* card utility */
+.card { border-radius: 16px; border: 1px solid rgba(0,0,0,0.05); background: white; box-shadow: 0 6px 18px rgba(0,0,0,0.06); }
