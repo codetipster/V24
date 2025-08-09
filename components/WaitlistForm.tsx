@@ -9,7 +9,7 @@ export function WaitlistForm() {
   return (
     <div className="w-full max-w-2xl mx-auto">
       <form
-        className="space-y-6"
+        className="space-y-4 sm:space-y-6"
         action={async (formData: FormData) => {
           // const res = await joinWaitlist(formData);
           // setStatus(res);
@@ -17,8 +17,8 @@ export function WaitlistForm() {
         }}
       >
         {/* Main inputs row */}
-        <div className="space-y-4">
-          <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-4">
+        <div className="space-y-3 sm:space-y-4">
+          <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-3 sm:gap-4">
             <label htmlFor="email" className="sr-only">Email</label>
             <input 
               id="email" 
@@ -27,7 +27,7 @@ export function WaitlistForm() {
               required 
               autoComplete="email" 
               placeholder="Enter your email address" 
-              className="w-full rounded-2xl border border-white/20 bg-white/10 backdrop-blur-md px-8 py-5 text-white placeholder-white/60 shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFCC00] focus-visible:border-[#FFCC00] transition-all duration-300 text-lg" 
+              className="w-full rounded-xl sm:rounded-2xl border border-white/20 bg-white/10 backdrop-blur-md px-4 sm:px-8 py-3 sm:py-5 text-white placeholder-white/60 shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFCC00] focus-visible:border-[#FFCC00] transition-all duration-300 text-sm sm:text-lg" 
             />
             
             <div>
@@ -37,21 +37,21 @@ export function WaitlistForm() {
                 name="firstName" 
                 type="text" 
                 placeholder="First name (optional)" 
-                className="w-full rounded-2xl border border-white/20 bg-white/10 backdrop-blur-md px-8 py-5 text-white placeholder-white/60 shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#14B8A6] focus-visible:border-[#14B8A6] transition-all duration-300 text-lg" 
+                className="w-full rounded-xl sm:rounded-2xl border border-white/20 bg-white/10 backdrop-blur-md px-4 sm:px-8 py-3 sm:py-5 text-white placeholder-white/60 shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#14B8A6] focus-visible:border-[#14B8A6] transition-all duration-300 text-sm sm:text-lg" 
               />
             </div>
           </div>
           
           {/* Consent and Submit row */}
-          <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-4 items-center">
-            <div className="flex items-center justify-center lg:justify-start gap-3">
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-3 sm:gap-4 items-center">
+            <div className="flex items-center justify-center lg:justify-start gap-2 sm:gap-3">
               <input 
                 id="consent" 
                 name="consent" 
                 type="checkbox" 
-                className="size-5 rounded border border-white/30 bg-white/10 text-[#FFCC00] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFCC00]" 
+                className="size-4 sm:size-5 rounded border border-white/30 bg-white/10 text-[#FFCC00] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFCC00]" 
               />
-              <label htmlFor="consent" className="text-sm text-white/80 select-none cursor-pointer">
+              <label htmlFor="consent" className="text-xs sm:text-sm text-white/80 select-none cursor-pointer">
                 I agree to be contacted about pilot onboarding
               </label>
             </div>
@@ -68,7 +68,7 @@ export function WaitlistForm() {
         {/* Status message */}
         <div aria-live="polite" className="min-h-6 text-center">
           {status && (
-            <p className={`text-sm font-medium ${status.ok ? "text-[#14B8A6]" : "text-red-400"}`}>
+            <p className={`text-xs sm:text-sm font-medium ${status.ok ? "text-[#14B8A6]" : "text-red-400"}`}>
               {status.message}
             </p>
           )}
@@ -83,7 +83,7 @@ function SubmitButton() {
   return (
     <Button
       borderRadius="1rem"
-      className="bg-gradient-to-r from-[#FFCC00] to-[#FFCC00]/90 text-[#003366] font-semibold text-lg border-none min-w-[160px] h-14"
+      className="bg-gradient-to-r from-[#FFCC00] to-[#FFCC00]/90 text-[#003366] font-semibold text-sm sm:text-lg border-none min-w-[140px] sm:min-w-[160px] h-10 sm:h-14"
       borderClassName="bg-gradient-to-r from-[#14B8A6] to-[#FFCC00] opacity-80"
       duration={3000}
       disabled={pending}
