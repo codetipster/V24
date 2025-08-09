@@ -69,6 +69,7 @@ export default function Home() {
               </p>
             </div>
             {/* <WaitlistForm /> */}
+            <WaitlistForm />
             <div className="flex items-center justify-center space-x-8 text-white/60 text-sm">
               <div className="flex items-center space-x-2">
                 <div className="w-2 h-2 bg-[#14B8A6] rounded-full"></div>

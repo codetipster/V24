@@ -1,7 +1,7 @@
 "use client";
 import * as React from "react";
 import { useFormStatus } from "react-dom";
-import { joinWaitlist } from "@/app/actions";
+// import { joinWaitlist } from "@/app/actions";
 import { Button } from "@/components/ui/moving-border";
 
 export function WaitlistForm() {
@@ -11,8 +11,9 @@ export function WaitlistForm() {
       <form
         className="space-y-6"
         action={async (formData: FormData) => {
-          const res = await joinWaitlist(formData);
-          setStatus(res);
+          // const res = await joinWaitlist(formData);
+          // setStatus(res);
+          setStatus({ ok: true, message: "Thanks! We'll be in touch soon." });
         }}
       >
         {/* Main inputs row */}
