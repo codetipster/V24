@@ -6,7 +6,7 @@ import { WaitlistForm } from "@/components/WaitlistForm";
 import { ScrollIndicator } from "@/components/ScrollIndicator";
 
 export default function Home() {
-  const launchAt = process.env.LAUNCH_AT || "2026-06-01T00:00:00Z";
+  const launchAt = process.env.LAUNCH_AT || "2025-12-01T00:00:00Z";
   
   return (
     <div className="min-h-screen relative overflow-hidden bg-gradient-to-br from-[#003366] via-[#111827] to-[#003366]">
@@ -94,6 +94,16 @@ export default function Home() {
             <p className="text-white/60 text-lg mb-6">Expected Launch</p>
             <Countdown launchAt={launchAt} />
           </div>
+
+          <div className="space-y-6">
+              <h2 className="text-2xl font-semibold text-white mb-2">
+                Become a pilot employer partner
+              </h2>
+              <p className="text-white/70 text-lg max-w-2xl mx-auto">
+                Request a pilot and get early access for your company.
+              </p>
+            </div>
+            <WaitlistForm /> 
         </div>
       </section>
 
@@ -354,7 +364,7 @@ export default function Home() {
 
           <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-12">
             <p className="text-2xl text-white/90 leading-relaxed max-w-4xl mx-auto">
-              “Make salary advances a background process — payouts in minutes, zero employer cost, and HR gets their day back.”
+              “The worker-first operating system for Africa—wages, benefits, and policy delivered directly.”
             </p>
             <div className="mt-8 text-white/60">
               <p className="font-medium">Vono24 Team</p>
