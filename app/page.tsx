@@ -40,7 +40,7 @@ export default function Home() {
           {/* Hero Badge */}
           <div className="flex justify-center">
             <div className="px-4 py-2 sm:px-8 sm:py-4 text-xs sm:text-sm text-[#FFCC00] font-medium bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
-              Revolutionizing Financial Services
+              Financial Services
             </div>
           </div>
 
@@ -60,7 +60,7 @@ export default function Home() {
 
           {/* CTA Section */}
           <div className="space-y-6 sm:space-y-8">
-            <div className="space-y-3 sm:space-y-6">
+            <div className="hidden sm:block space-y-3 sm:space-y-6">
               <h2 className="text-lg sm:text-2xl font-semibold text-white mb-2 px-4">
                 Become a pilot employer partner
               </h2>
@@ -68,7 +68,9 @@ export default function Home() {
                 Request a pilot and get early access for your company.
               </p>
             </div>
-            <WaitlistForm />
+            <div className="hidden sm:block">
+              <WaitlistForm />
+            </div>
             
             {/* Key Features - Mobile Optimized */}
             <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 sm:gap-8 text-white/60 text-xs sm:text-sm px-4">
@@ -122,7 +124,7 @@ export default function Home() {
                 </div>
               </div>
               
-              <div className="absolute bottom-4 right-4 sm:bottom-8 sm:right-8 bg-white/10 backdrop-blur-sm rounded-xl p-2 sm:p-4 border border-white/20">
+              <div className="hidden sm:block absolute bottom-4 right-4 sm:bottom-8 sm:right-8 bg-white/10 backdrop-blur-sm rounded-xl p-2 sm:p-4 border border-white/20">
                 <div className="flex items-center space-x-2 sm:space-x-3">
                   <div className="w-2 h-2 sm:w-3 sm:h-3 bg-[#FFCC00] rounded-full"></div>
                   <span className="text-white/80 text-xs sm:text-sm">Real-time Updates</span>
