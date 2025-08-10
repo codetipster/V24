@@ -47,14 +47,14 @@ export default function Home() {
           {/* Main Headline */}
           <div className="space-y-4 sm:space-y-6">
             <h1 className="text-2xl sm:text-4xl lg:text-6xl font-bold text-white leading-tight tracking-tight px-2">
-              The easiest way to
+              Vono24: Where Small
               <br />
               <span className="bg-gradient-to-r from-[#14B8A6] to-[#FFCC00] bg-clip-text text-transparent">
-                help your team—today
+                Businesses Grow Big
               </span>
             </h1>
             <p className="text-base sm:text-xl lg:text-2xl text-white/80 max-w-4xl mx-auto leading-relaxed px-4">
-              Add staff to Vono24. We pay; you reconcile. Done.
+              We empower African small and micro businesses with business management tools designed to save time, improve cash flow, and build credible business profiles.
             </p>
           </div>
 
@@ -140,32 +140,32 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12 sm:mb-20">
             <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 px-2">
-              Financial stress hurts retention
+              Why Partner with
               <br />
-              <span className="text-white/60">and productivity</span>
+              <span className="text-white/60">Vono24?</span>
             </h2>
             <p className="text-base sm:text-xl text-white/70 max-w-3xl mx-auto px-4">
-              Many workers run out of cash before payday. They ask for salary advances or skip shifts. You handle requests over calls and chats, then manually deduct at payroll. Work slows.
+              Transform your business operations and employee satisfaction with our comprehensive financial platform.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             <ProblemCard 
-              title="Payday gaps"
-              description="End‑of‑month pay creates cash gaps for transport, food and bills. Staff need money before payday."
-              icon="⏰"
+              title="Improve Employee Wellbeing"
+              description="Give your workers financial freedom to access earned wages anytime — reducing stress, increasing loyalty, and boosting productivity."
+              icon="💪"
               delay="0"
             />
             <ProblemCard 
-              title="Constant advance requests"
-              description="You handle calls and messages for 'small advances' and track repayments by hand."
-              icon="🧾"
+              title="Simplify Payment Management"
+              description="Our digital tools make it easy to track payments, invoices, and customer interactions — saving time and minimizing errors."
+              icon="📊"
               delay="100"
             />
             <ProblemCard 
-              title="Lost time and focus"
-              description="Cash stress leads to late arrivals, missed shifts and lower output."
-              icon="😰"
+              title="Build Foundation for Growth"
+              description="Digitize and organize your business data, creating trusted financial profiles that open doors to loans and credit."
+              icon="🚀"
               delay="200"
             />
           </div>
@@ -177,33 +177,38 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12 sm:mb-20">
             <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 px-2">
-              The simplest way to offer
+              How Vono24 Works
               <br />
               <span className="bg-gradient-to-r from-[#14B8A6] to-[#FFCC00] bg-clip-text text-transparent">
-                earned wage access
+                for Your Business
               </span>
             </h2>
             <p className="text-base sm:text-xl text-white/70 max-w-3xl mx-auto px-4">
-              Add your staff. Vono24 pays up to 60% of what they've earned. You deduct at month‑end using our payroll file.
+              Partner with us to streamline operations, boost employee satisfaction, and unlock growth opportunities.
             </p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
             <div className="space-y-6 sm:space-y-8 order-2 lg:order-1">
               <FeatureHighlight 
-                title="Employer Onboarding & Payroll"
-                description="Upload staff via CSV or manual entry — no IT integration required at MVP."
+                title="Partner with Us"
+                description="Sign up your company or talk to your employer about partnering with Vono24 for seamless integration."
                 accent="[#14B8A6]"
               />
               <FeatureHighlight 
-                title="Instant Advances (60% cap)"
-                description="Employees can access up to 60% of earned wages in minutes. We handle disbursement."
+                title="Enable Earned Wage Access"
+                description="Let your employees access up to 60% of their earned salary anytime before payday — reducing financial stress."
                 accent="[#FFCC00]"
               />
               <FeatureHighlight 
-                title="Reconciliation & Compliance"
-                description="Automated payroll deduction file and basic KYC/BVN checks for compliance."
+                title="Use Digital Tools"
+                description="Manage payments, bookkeeping, and customer relationships with our easy-to-use platform."
                 accent="[#14B8A6]"
+              />
+              <FeatureHighlight 
+                title="Grow & Scale"
+                description="Use your trusted business data to access credit and financial products from banks and lenders."
+                accent="[#FFCC00]"
               />
             </div>
             
@@ -285,27 +290,27 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12 sm:mb-20">
             <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 sm:mb-8 px-2">
-              Built for
+              Who Is
               <br />
-              <span className="text-[#FFCC00]">working people</span>
+              <span className="text-[#FFCC00]">Vono24 For?</span>
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-8">
             <AdvancedFeatureCard 
-              title="Employer Onboarding"
-              description="Secure login for HR. Add staff via CSV/Excel or manual entry with salary and bank details."
-              features={["CSV/Excel upload", "Manual add", "Status updates"]}
+              title="Small & Medium Enterprises"
+              description="SMEs looking to streamline financial operations and boost employee satisfaction with modern digital tools."
+              features={["Payment management", "Employee wellbeing", "Growth opportunities"]}
             />
             <AdvancedFeatureCard 
-              title="Instant Advances"
-              description="On approval, payouts are initiated to employee bank accounts with a 60% cap."
-              features={["<2 min payouts", "60% of accrued", "24/7 availability"]}
+              title="Employers & HR Teams"
+              description="Teams eager to improve worker wellbeing and retention through flexible financial solutions."
+              features={["Earned wage access", "Digital onboarding", "Automated reconciliation"]}
             />
             <AdvancedFeatureCard 
-              title="Reconciliation"
-              description="Download a monthly payroll file with per-employee deductions for seamless processing."
-              features={["Automated file", "Aggregate insights (optional)", "Compliance ready"]}
+              title="Informal Sector & Gig Workers"
+              description="Businesses and workers wanting to formalize operations and unlock financing opportunities."
+              features={["Financial inclusion", "Credit access", "Digital identity"]}
             />
           </div>
         </div>
@@ -347,19 +352,19 @@ export default function Home() {
       <section className="relative z-20 py-20 sm:py-32 px-4 sm:px-6">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-white mb-8 sm:mb-12 px-2">
-            Built on trust, secured by design
+            What Our Partners Say
           </h2>
           
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-12 sm:mb-16">
-            <TrustMetric number="₦0" label="Employer Cost" />
+            <TrustMetric number="₦0" label="Setup Cost" />
             <TrustMetric number="<2 min" label="Payout Time" />
             <TrustMetric number="60%" label="Max Advance" />
-            <TrustMetric number="0" label="Extra Admin" />
+            <TrustMetric number="24/7" label="Availability" />
           </div>
 
           <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl sm:rounded-3xl p-6 sm:p-12">
             <p className="text-lg sm:text-2xl text-white/90 leading-relaxed max-w-4xl mx-auto">
-              "The worker-first operating system for Africa—wages, benefits, and policy delivered directly."
+              "We believe every small business and worker deserves timely financial access and modern tools to thrive — unlocking their potential for growth, stability, and prosperity."
             </p>
             <div className="mt-6 sm:mt-8 text-white/60">
               <p className="font-medium">Vono24 Team</p>
@@ -372,14 +377,14 @@ export default function Home() {
       <section className="relative z-20 py-20 sm:py-32 px-4 sm:px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 sm:mb-8 px-2">
-            Ready to offer
+            Ready to Empower
             <br />
             <span className="bg-gradient-to-r from-[#14B8A6] to-[#FFCC00] bg-clip-text text-transparent">
-              Earned Wage Access?
+              Your Business & Workforce?
             </span>
           </h2>
           <p className="text-base sm:text-xl text-white/70 mb-8 sm:mb-12 max-w-2xl mx-auto px-4">
-            Become a pilot employer partner. We'll help you onboard quickly — no IT integration required.
+            Partner with Vono24 today and take the first step towards financial inclusion, operational ease, and sustainable growth.
           </p>
           
           <div className="space-y-8">
@@ -414,7 +419,7 @@ export default function Home() {
                 <span className="text-lg sm:text-xl font-bold text-white">Vono24</span>
               </div>
               <p className="text-white/60 text-sm leading-relaxed max-w-md mx-auto lg:mx-0">
-                Vono24 means promise — earned wages on demand, zero employer cost.
+                Join the Future of African Business Finance — with Vono24
               </p>
             </div>
             
