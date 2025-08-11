@@ -18,10 +18,10 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   title: "Vono24",
   metadataBase: new URL('https://vono24.com'),
-  description: "From Payday to Every Day.",
+  description: "The Operating System for Small Business Growth in Africa",
   openGraph: {
     title: "Vono24 Coming Soon",
-    description: "Your earnings, ready when life happens.",
+    description: "Your Business. Powered by Vono24.",
     images: [
       {
   url: "/og-placeholder.svg",
