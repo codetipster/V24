@@ -52,7 +52,7 @@ export function WaitlistForm() {
                 className="size-4 sm:size-5 rounded border border-white/30 bg-white/10 text-[#FFCC00] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFCC00]" 
               />
               <label htmlFor="consent" className="text-xs sm:text-sm text-white/80 select-none cursor-pointer">
-                I agree to be contacted about pilot onboarding
+                I agree to be contacted about early access to Vono24
               </label>
             </div>
             
@@ -88,7 +88,7 @@ function SubmitButton() {
       duration={3000}
       disabled={pending}
     >
-      {pending ? "Requesting..." : "Request Pilot"}
+      {pending ? "Joining..." : "Join Waitlist"}
     </Button>
   );
 }

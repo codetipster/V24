@@ -40,21 +40,21 @@ export default function Home() {
           {/* Hero Badge */}
           <div className="flex justify-center">
             <div className="px-4 py-2 sm:px-8 sm:py-4 text-xs sm:text-sm text-[#FFCC00] font-medium bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
-              Financial Services
+              Financial Inclusion for African SMEs
             </div>
           </div>
 
           {/* Main Headline */}
           <div className="space-y-4 sm:space-y-6">
             <h1 className="text-2xl sm:text-4xl lg:text-6xl font-bold text-white leading-tight tracking-tight px-2">
-              Vono24: Where Small
+              Transform Informal
               <br />
               <span className="bg-gradient-to-r from-[#14B8A6] to-[#FFCC00] bg-clip-text text-transparent">
-                Businesses Grow Big
+                Bookkeeping into Bank-Ready Records
               </span>
             </h1>
             <p className="text-base sm:text-xl lg:text-2xl text-white/80 max-w-4xl mx-auto leading-relaxed px-4">
-              We empower African small and micro businesses with business management tools designed to save time, improve cash flow, and build credible business profiles.
+              Vono24 transforms scattered receipts and mental inventory into verified financial records, unlocking access to capital that small businesses desperately need to grow across Africa.
             </p>
           </div>
 
@@ -62,10 +62,10 @@ export default function Home() {
           <div className="space-y-6 sm:space-y-8">
             <div className="hidden sm:block space-y-3 sm:space-y-6">
               <h2 className="text-lg sm:text-2xl font-semibold text-white mb-2 px-4">
-                Become a pilot employer partner
+                Join the waitlist for early access
               </h2>
               <p className="text-white/70 text-sm sm:text-lg max-w-2xl mx-auto px-4">
-                Request a pilot and get early access for your company.
+                Be among the first small business owners to unlock financial growth with Vono24.
               </p>
             </div>
             <div className="hidden sm:block">
@@ -76,19 +76,19 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 sm:gap-8 text-white/60 text-xs sm:text-sm px-4">
               <div className="flex items-center space-x-2">
                 <div className="w-2 h-2 bg-[#14B8A6] rounded-full"></div>
-                <span>₦0 employer cost</span>
+                <span>Barcode scanning</span>
               </div>
               <div className="flex items-center space-x-2">
                 <div className="w-2 h-2 bg-[#FFCC00] rounded-full"></div>
-                <span>&lt;2 min payouts</span>
+                <span>Gamified training</span>
               </div>
               <div className="flex items-center space-x-2">
                 <div className="w-2 h-2 bg-[#14B8A6] rounded-full"></div>
-                <span>60% max advance</span>
+                <span>Bank-ready records</span>
               </div>
               <div className="flex items-center space-x-2">
                 <div className="w-2 h-2 bg-[#FFCC00] rounded-full"></div>
-                <span>Automated payroll file</span>
+                <span>Credit access</span>
               </div>
             </div>
           </div>
@@ -112,22 +112,22 @@ export default function Home() {
                 <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-r from-[#14B8A6] to-[#FFCC00] rounded-2xl mx-auto flex items-center justify-center">
                   <Logo className="h-8 w-8 sm:h-10 sm:w-10" variant="dark" />
                 </div>
-                <h3 className="text-xl sm:text-2xl font-bold text-white">Platform Preview</h3>
-                <p className="text-white/60 text-sm sm:text-base">Employer &amp; Employee experience</p>
+                <h3 className="text-xl sm:text-2xl font-bold text-white">Smart Inventory Management</h3>
+                <p className="text-white/60 text-sm sm:text-base">Scan products, track sales, build credit history</p>
               </div>
               
               {/* Floating UI Elements - Responsive positioning */}
               <div className="absolute top-4 left-4 sm:top-8 sm:left-8 bg-white/10 backdrop-blur-sm rounded-xl p-2 sm:p-4 border border-white/20">
                 <div className="flex items-center space-x-2 sm:space-x-3">
                   <div className="w-2 h-2 sm:w-3 sm:h-3 bg-[#14B8A6] rounded-full"></div>
-                  <span className="text-white/80 text-xs sm:text-sm">Live Balance</span>
+                  <span className="text-white/80 text-xs sm:text-sm">Daily Sales</span>
                 </div>
               </div>
               
               <div className="hidden sm:block absolute bottom-4 right-4 sm:bottom-8 sm:right-8 bg-white/10 backdrop-blur-sm rounded-xl p-2 sm:p-4 border border-white/20">
                 <div className="flex items-center space-x-2 sm:space-x-3">
                   <div className="w-2 h-2 sm:w-3 sm:h-3 bg-[#FFCC00] rounded-full"></div>
-                  <span className="text-white/80 text-xs sm:text-sm">Real-time Updates</span>
+                  <span className="text-white/80 text-xs sm:text-sm">Inventory Alert</span>
                 </div>
               </div>
             </div>
@@ -140,32 +140,32 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12 sm:mb-20">
             <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 px-2">
-              Why Partner with
+              The Challenge for
               <br />
-              <span className="text-white/60">Vono24?</span>
+              <span className="text-white/60">Small African Businesses</span>
             </h2>
             <p className="text-base sm:text-xl text-white/70 max-w-3xl mx-auto px-4">
-              Transform your business operations and employee satisfaction with our comprehensive financial platform.
+              Informal sector businesses drive 70% of Africa's GDP, yet struggle to access the capital they need to grow.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             <ProblemCard 
-              title="Improve Employee Wellbeing"
-              description="Give your workers financial freedom to access earned wages anytime — reducing stress, increasing loyalty, and boosting productivity."
-              icon="💪"
+              title="No Formal Records"
+              description="Small businesses keep inventory in their heads or on paper scraps, making it impossible for banks to assess creditworthiness."
+              icon="📝"
               delay="0"
             />
             <ProblemCard 
-              title="Simplify Payment Management"
-              description="Our digital tools make it easy to track payments, invoices, and customer interactions — saving time and minimizing errors."
-              icon="📊"
+              title="Limited Digital Skills"
+              description="Traditional accounting software requires skills many small business owners don't have, creating more friction than value."
+              icon="📱"
               delay="100"
             />
             <ProblemCard 
-              title="Build Foundation for Growth"
-              description="Digitize and organize your business data, creating trusted financial profiles that open doors to loans and credit."
-              icon="🚀"
+              title="No Access to Capital"
+              description="Without verifiable financial records, banks see these businesses as too risky to lend to, blocking growth opportunities."
+              icon="🏦"
               delay="200"
             />
           </div>
@@ -184,30 +184,30 @@ export default function Home() {
               </span>
             </h2>
             <p className="text-base sm:text-xl text-white/70 max-w-3xl mx-auto px-4">
-              Partner with us to streamline operations, boost employee satisfaction, and unlock growth opportunities.
+              We don't ask you to change your behavior — we embed our technology into your existing operations.
             </p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
             <div className="space-y-6 sm:space-y-8 order-2 lg:order-1">
               <FeatureHighlight 
-                title="Partner with Us"
-                description="Sign up your company or talk to your employer about partnering with Vono24 for seamless integration."
+                title="Register Your Products"
+                description="Take photos of your products, speak their names, set prices. Vono24 generates unique barcodes automatically."
                 accent="[#14B8A6]"
               />
               <FeatureHighlight 
-                title="Enable Earned Wage Access"
-                description="Let your employees access up to 60% of their earned salary anytime before payday — reducing financial stress."
+                title="Scan & Sell"
+                description="Scan product barcodes during sales. Every transaction automatically updates inventory and financial records."
                 accent="[#FFCC00]"
               />
               <FeatureHighlight 
-                title="Use Digital Tools"
-                description="Manage payments, bookkeeping, and customer relationships with our easy-to-use platform."
+                title="Learn While You Work"
+                description="Gamified training teaches proper bookkeeping and inventory management skills as you use the platform."
                 accent="[#14B8A6]"
               />
               <FeatureHighlight 
-                title="Grow & Scale"
-                description="Use your trusted business data to access credit and financial products from banks and lenders."
+                title="Access Capital"
+                description="Build bank-ready financial profiles that unlock loans and credit facilities for business expansion."
                 accent="[#FFCC00]"
               />
             </div>
@@ -228,48 +228,48 @@ export default function Home() {
                       </div>
                     </div>
                     
-                    {/* Balance Card */}
+                    {/* Sales Card */}
                     <div className="bg-gradient-to-r from-[#14B8A6] to-[#FFCC00] rounded-2xl p-4 sm:p-6 text-white">
-                      <p className="text-xs sm:text-sm opacity-90">Earned This Week</p>
-                      <p className="text-xl sm:text-2xl font-bold">₦487,000.50</p>
-                      <p className="text-xs opacity-75 mt-1 sm:mt-2">Available: ₦243,000.75</p>
+                      <p className="text-xs sm:text-sm opacity-90">Today's Sales</p>
+                      <p className="text-xl sm:text-2xl font-bold">₦15,000</p>
+                      <p className="text-xs opacity-75 mt-1 sm:mt-2">Profit: ₦4,500</p>
                     </div>
                     
                     {/* Quick Actions */}
                     <div className="grid grid-cols-2 gap-2 sm:gap-3">
                       <div className="bg-white/5 rounded-xl p-3 sm:p-4 text-center border border-white/10">
                         <div className="w-6 h-6 sm:w-8 sm:h-8 bg-[#14B8A6] rounded-lg mx-auto mb-1 sm:mb-2"></div>
-                        <p className="text-white/80 text-xs">Cash Out</p>
+                        <p className="text-white/80 text-xs">Scan Product</p>
                       </div>
                       <div className="bg-white/5 rounded-xl p-3 sm:p-4 text-center border border-white/10">
                         <div className="w-6 h-6 sm:w-8 sm:h-8 bg-[#FFCC00] rounded-lg mx-auto mb-1 sm:mb-2"></div>
-                        <p className="text-white/80 text-xs">Schedule</p>
+                        <p className="text-white/80 text-xs">View Inventory</p>
                       </div>
                     </div>
                     
                     {/* Recent Activity */}
                     <div className="space-y-2 sm:space-y-3">
-                      <p className="text-white/60 text-xs sm:text-sm">Recent Activity</p>
+                      <p className="text-white/60 text-xs sm:text-sm">Recent Sales</p>
                       <div className="space-y-2">
                         <div className="flex items-center justify-between py-1 sm:py-2">
                           <div className="flex items-center space-x-2 sm:space-x-3">
                             <div className="w-5 h-5 sm:w-6 sm:h-6 bg-[#14B8A6] rounded-full"></div>
                             <div>
-                              <p className="text-white text-xs sm:text-sm">Wages earned</p>
-                              <p className="text-white/60 text-xs">Today, 8 hours</p>
+                              <p className="text-white text-xs sm:text-sm">Rice (2kg)</p>
+                              <p className="text-white/60 text-xs">2 minutes ago</p>
                             </div>
                           </div>
-                          <p className="text-[#14B8A6] text-xs sm:text-sm font-medium">+₦120</p>
+                          <p className="text-[#14B8A6] text-xs sm:text-sm font-medium">₦2,500</p>
                         </div>
                         <div className="flex items-center justify-between py-1 sm:py-2">
                           <div className="flex items-center space-x-2 sm:space-x-3">
                             <div className="w-5 h-5 sm:w-6 sm:h-6 bg-[#FFCC00] rounded-full"></div>
                             <div>
-                              <p className="text-white text-xs sm:text-sm">Cash advance</p>
-                              <p className="text-white/60 text-xs">Yesterday</p>
+                              <p className="text-white text-xs sm:text-sm">Cooking Oil</p>
+                              <p className="text-white/60 text-xs">5 minutes ago</p>
                             </div>
                           </div>
-                          <p className="text-white/60 text-xs sm:text-sm">₦200</p>
+                          <p className="text-white/60 text-xs sm:text-sm">₦1,800</p>
                         </div>
                       </div>
                     </div>
@@ -290,27 +290,27 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12 sm:mb-20">
             <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 sm:mb-8 px-2">
-              Who Is
+              Perfect For
               <br />
-              <span className="text-[#FFCC00]">Vono24 For?</span>
+              <span className="text-[#FFCC00]">Small African Businesses</span>
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-8">
             <AdvancedFeatureCard 
-              title="Small & Medium Enterprises"
-              description="SMEs looking to streamline financial operations and boost employee satisfaction with modern digital tools."
-              features={["Payment management", "Employee wellbeing", "Growth opportunities"]}
+              title="Roadside Stores & Kiosks"
+              description="Transform your mom's roadside store from mental inventory to bank-ready financial records with simple barcode scanning."
+              features={["Barcode scanning", "Voice input", "Daily sales tracking"]}
             />
             <AdvancedFeatureCard 
-              title="Employers & HR Teams"
-              description="Teams eager to improve worker wellbeing and retention through flexible financial solutions."
-              features={["Earned wage access", "Digital onboarding", "Automated reconciliation"]}
+              title="Market Traders & Vendors"
+              description="Convert scattered receipts into verifiable business data that unlocks access to loans and credit facilities."
+              features={["Inventory management", "Profit tracking", "Credit building"]}
             />
             <AdvancedFeatureCard 
-              title="Informal Sector & Gig Workers"
-              description="Businesses and workers wanting to formalize operations and unlock financing opportunities."
-              features={["Financial inclusion", "Credit access", "Digital identity"]}
+              title="Small Family Businesses"
+              description="Build financial credibility through consistent record-keeping without changing your existing business habits."
+              features={["Gamified learning", "Financial statements", "Growth opportunities"]}
             />
           </div>
         </div>
@@ -321,28 +321,28 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12 sm:mb-20">
             <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 sm:mb-8 px-2">
-              How Vono24 works
+              Your Journey to Financial Growth
             </h2>
             <p className="text-base sm:text-xl text-white/70 max-w-3xl mx-auto px-4">
-              Three simple steps — built for employers and employees
+              From informal record-keeping to bank-ready financial profiles in three simple steps
             </p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-12">
             <StepCard 
               step="01"
-              title="Onboard Your Staff"
-              description="Upload employee list via CSV or manual entry with salary and bank details."
+              title="Setup Your Products"
+              description="Register your inventory with photos and voice input. Generate printable barcodes for each product."
             />
             <StepCard 
               step="02"
-              title="Employees Access Wages"
-              description="Staff can access up to 60% of accrued wages, any time."
+              title="Scan & Track Sales"
+              description="Scan product barcodes during sales. Automatically track inventory, revenue, and profits daily."
             />
             <StepCard 
               step="03"
-              title="Payroll Reconciliation"
-              description="At month end, apply the automated deduction file — zero extra admin."
+              title="Access Capital"
+              description="Build verifiable financial records that unlock loans and credit for business expansion."
             />
           </div>
         </div>
@@ -352,19 +352,19 @@ export default function Home() {
       <section className="relative z-20 py-20 sm:py-32 px-4 sm:px-6">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-white mb-8 sm:mb-12 px-2">
-            What Our Partners Say
+            The Impact on African Communities
           </h2>
           
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-12 sm:mb-16">
+            <TrustMetric number="70%" label="Africa's GDP" />
             <TrustMetric number="₦0" label="Setup Cost" />
-            <TrustMetric number="<2 min" label="Payout Time" />
-            <TrustMetric number="60%" label="Max Advance" />
             <TrustMetric number="24/7" label="Availability" />
+            <TrustMetric number="100%" label="Voice Support" />
           </div>
 
           <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl sm:rounded-3xl p-6 sm:p-12">
             <p className="text-lg sm:text-2xl text-white/90 leading-relaxed max-w-4xl mx-auto">
-              "We believe every small business and worker deserves timely financial access and modern tools to thrive — unlocking their potential for growth, stability, and prosperity."
+              "When small businesses like my mother's can access funding and scale, the ripple effects strengthen entire communities — creating jobs for youth, enabling better education for families, and building more prosperous, stable societies across Africa."
             </p>
             <div className="mt-6 sm:mt-8 text-white/60">
               <p className="font-medium">Vono24 Team</p>
@@ -377,14 +377,14 @@ export default function Home() {
       <section className="relative z-20 py-20 sm:py-32 px-4 sm:px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 sm:mb-8 px-2">
-            Ready to Empower
+            Ready to Transform
             <br />
             <span className="bg-gradient-to-r from-[#14B8A6] to-[#FFCC00] bg-clip-text text-transparent">
-              Your Business & Workforce?
+              Your Business Records?
             </span>
           </h2>
           <p className="text-base sm:text-xl text-white/70 mb-8 sm:mb-12 max-w-2xl mx-auto px-4">
-            Partner with Vono24 today and take the first step towards financial inclusion, operational ease, and sustainable growth.
+            Join the waitlist and be among the first small business owners to unlock financial growth with Vono24.
           </p>
           
           <div className="space-y-8">
@@ -401,10 +401,10 @@ export default function Home() {
             <p className="text-white/70">Straight answers to common questions</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
-            <FAQItem q="Do employers have to fund advances?" a="No. Vono24 funds payouts. Employers simply apply the automated deduction file at payroll." />
-            <FAQItem q="How fast are payouts?" a="Typically under 2 minutes after request, 24/7." />
-            <FAQItem q="What's the maximum employees can access?" a="Up to 60% of accrued wages at the time of the request." />
-            <FAQItem q="Who is this for?" a="SMEs (2–500 staff), gig platforms, and BPOs across Africa. Individuals and small teams can request access too." />
+            <FAQItem q="Do I need to learn accounting software?" a="No. Vono24 works invisibly around your existing habits. Just scan products and sell — we handle the bookkeeping automatically." />
+            <FAQItem q="How does the barcode system work?" a="Take photos of your products, speak their names, set prices. We generate unique barcodes you print and stick on products." />
+            <FAQItem q="What if I don't have internet?" a="Vono24 works offline and syncs when you have connection. Perfect for areas with unreliable internet." />
+            <FAQItem q="How long until I can get a loan?" a="Most businesses build bank-ready financial profiles within 3-6 months of consistent use, depending on transaction volume." />
           </div>
         </div>
       </section>
@@ -419,7 +419,7 @@ export default function Home() {
                 <span className="text-lg sm:text-xl font-bold text-white">Vono24</span>
               </div>
               <p className="text-white/60 text-sm leading-relaxed max-w-md mx-auto lg:mx-0">
-                Join the Future of African Business Finance — with Vono24
+                Transforming informal bookkeeping into verified financial records for African small businesses.
               </p>
             </div>
             

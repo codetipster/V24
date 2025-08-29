@@ -817,6 +817,9 @@
   .shrink-0 {
     flex-shrink: 0;
   }
+  .grow {
+    flex-grow: 1;
+  }
   .\[transform-origin\:calc\(50\%\+400px\)\] {
     transform-origin: calc(50% + 400px);
   }
